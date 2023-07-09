@@ -9,6 +9,7 @@ package Problems.Easy;
 
 public class _13_MergeTwoSortedLinkedLists {
     public static void main(String[] args) {
+
         ListNode headList1 = new ListNode(1);
         ListNode secondNode1 = new ListNode(2);
         ListNode thirdNode1 = new ListNode(4);
