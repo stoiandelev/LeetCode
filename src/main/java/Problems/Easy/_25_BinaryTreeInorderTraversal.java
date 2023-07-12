@@ -6,6 +6,15 @@ import java.util.List;
 public class _25_BinaryTreeInorderTraversal {
     public static void main(String[] args) {
 
+        TreeNode tree = new TreeNode(1);
+        TreeNode tempTree = insert(tree, 2);
+
+        insert(tempTree, 3);
+
+
+
+
+
 
     }
 
@@ -66,5 +75,20 @@ public class _25_BinaryTreeInorderTraversal {
             this.right = right;
             return this;
         }
+    }
+
+    public static TreeNode insert(TreeNode root, int value) {
+        if (root == null) {
+            root = new TreeNode(value);
+            return root;
+        }
+
+        if (value < root.getVal()) {
+            root.left = insert(root.left, value);
+        } else {
+            root.right = insert(root.right, value);
+        }
+
+        return root;
     }
 }
