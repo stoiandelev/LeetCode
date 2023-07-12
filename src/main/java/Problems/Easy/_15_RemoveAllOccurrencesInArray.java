@@ -1,9 +1,6 @@
 package Problems.Easy;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+
 
 /**
  * Given an integer array nums and an integer val,

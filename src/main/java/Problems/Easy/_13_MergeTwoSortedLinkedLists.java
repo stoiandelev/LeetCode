@@ -43,6 +43,7 @@ public class _13_MergeTwoSortedLinkedLists {
 
         if (list1 == null)
             return list2;
+
         return list1;
 
     }
