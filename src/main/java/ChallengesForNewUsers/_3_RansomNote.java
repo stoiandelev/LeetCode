@@ -13,9 +13,11 @@ public class _3_RansomNote {
     public static void main(String[] args) {
         String one = "aa";
         String tow = "aab";
+
+        System.out.println(canConstruct(one, tow));
     }
 
-    public boolean canConstruct(String ransomNote, String magazine) {
+    public static boolean canConstruct(String ransomNote, String magazine) {
         HashMap<Character, Integer> map = new HashMap<>();
 
         for (int i = 0; i < magazine.length(); i++) {

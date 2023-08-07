@@ -10,10 +10,10 @@ package Problems.Easy;
 public class _26_SameTree {
     public static void main(String[] args) {
         TreeNode tree1 = new TreeNode(1);
-        insert_26(tree1, 2);
+        insert(tree1, 2);
 
         TreeNode tree2 = new TreeNode(1);
-        insert_26(tree2, 1);
+        insert(tree2, 2);
 
         System.out.println(isSameTree(tree1, tree2));
     }
@@ -35,16 +35,16 @@ public class _26_SameTree {
 
     }
 
-    public static TreeNode insert_26(TreeNode root, int value) {
+    public static TreeNode insert(TreeNode root, int value) {
         if (root == null) {
             root = new TreeNode(value);
             return root;
         }
 
         if (value < root.getVal()) {
-            root.left = insert_26(root.left, value);
+            root.left = insert(root.left, value);
         } else {
-            root.right = insert_26(root.right, value);
+            root.right = insert(root.right, value);
         }
 
         return root;

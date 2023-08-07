@@ -3,6 +3,10 @@ package Problems.Easy;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Given the root of a binary tree, return the inorder traversal of its nodes' values.
+ */
+
 public class _25_BinaryTreeInorderTraversal {
     public static void main(String[] args) {
 
