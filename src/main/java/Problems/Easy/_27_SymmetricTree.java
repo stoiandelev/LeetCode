@@ -38,35 +38,35 @@ public class _27_SymmetricTree {
         if (node1 == null || node2 == null) {
             return false;
         }
-        return node1.value == node2.value &&
+        return node1.val == node2.val &&
                 isMirror(node1.left, node2.right) &&
                 isMirror(node1.right, node2.left);
     }
 
     public static class TreeNode {
-        int value;
+        int val;
         TreeNode left;
         TreeNode right;
 
         TreeNode() {
         }
 
-        TreeNode(int value) {
-            this.value = value;
+        TreeNode(int val) {
+            this.val = val;
         }
 
-        TreeNode(int value, TreeNode left, TreeNode right) {
-            this.value = value;
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
             this.left = left;
             this.right = right;
         }
 
-        public int getValue() {
-            return value;
+        public int getVal() {
+            return val;
         }
 
-        public TreeNode setValue(int value) {
-            this.value = value;
+        public TreeNode setVal(int val) {
+            this.val = val;
             return this;
         }
 
