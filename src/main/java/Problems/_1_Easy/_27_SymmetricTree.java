@@ -1,4 +1,4 @@
-package Problems.Easy;
+package Problems._1_Easy;
 
 /**
  * Given the root of a binary tree, check whether it is a mirror of itself

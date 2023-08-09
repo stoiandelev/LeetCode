@@ -1,4 +1,4 @@
-package Problems.Easy;
+package Problems._1_Easy;
 
 /**
  * Given two binary strings a and b, return their sum as a binary string.

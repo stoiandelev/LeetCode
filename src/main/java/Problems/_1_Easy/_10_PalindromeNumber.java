@@ -1,4 +1,4 @@
-package Problems.Easy;
+package Problems._1_Easy;
 
 /**
  * Given an integer x, return true if x is a palindrome and false otherwise.

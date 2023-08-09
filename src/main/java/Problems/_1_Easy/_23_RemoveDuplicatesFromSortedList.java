@@ -1,8 +1,4 @@
-package Problems.Easy;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+package Problems._1_Easy;
 
 /**
  * Given the head of a sorted linked list,

@@ -1,4 +1,4 @@
-package Problems.Easy;
+package Problems._1_Easy;
 
 /**
  * Given a non-negative integer x, return the square root of x

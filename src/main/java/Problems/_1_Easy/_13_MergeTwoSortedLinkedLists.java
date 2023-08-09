@@ -1,4 +1,4 @@
-package Problems.Easy;
+package Problems._1_Easy;
 
 /**
  * You are given the heads of two sorted linked lists list1 and list2.

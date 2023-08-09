@@ -1,36 +1,37 @@
-package Problems.Easy;
+package Problems._1_Easy;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * Given the root of a binary tree, return its maximum depth.
- * A binary tree's maximum depth is the number of nodes along
- * the longest path from the root node down to the farthest leaf node.
- * Maximum deep is how many rows have in a tree.
+ * Given the root of a binary tree, return the inorder traversal of its nodes' values.
  */
 
-public class _28_MaximumDepthOfBinaryTree {
+public class _25_BinaryTreeInorderTraversal {
     public static void main(String[] args) {
-        TreeNode tree = new TreeNode(3);
-        tree.left = new TreeNode(9);
-        tree.right = new TreeNode(20);
-        tree.right.left = new TreeNode(15);
-        tree.right.right = new TreeNode(7);
 
-        System.out.println(maxDepth(tree));
+        TreeNode tree = new TreeNode(1);
+        TreeNode tempTree = insert(tree, 2);
+
+        insert(tempTree, 3);
+
+
+
+
+
 
     }
 
-    public static int maxDepth(TreeNode root) {
-        // Base Condition
+    List<Integer> ans = new ArrayList<>();
+
+    public List<Integer> inorderTraversal(TreeNode root) {
         if (root == null) {
-            return 0;
+            return ans;
         }
-
-        // Hypothesis
-        int left = maxDepth(root.left);
-        int right = maxDepth(root.right);
-
-        // Induction
-        return Math.max(left, right) + 1;
+        inorderTraversal(root.left);
+        ans.add(root.val);
+        inorderTraversal(root.right);
+        return ans;
     }
 
 
@@ -78,5 +79,20 @@ public class _28_MaximumDepthOfBinaryTree {
             this.right = right;
             return this;
         }
+    }
+
+    public static TreeNode insert(TreeNode root, int value) {
+        if (root == null) {
+            root = new TreeNode(value);
+            return root;
+        }
+
+        if (value < root.getVal()) {
+            root.left = insert(root.left, value);
+        } else {
+            root.right = insert(root.right, value);
+        }
+
+        return root;
     }
 }
