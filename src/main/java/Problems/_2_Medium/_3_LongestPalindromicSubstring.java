@@ -13,13 +13,13 @@ package Problems._2_Medium;
 public class _3_LongestPalindromicSubstring {
     public static void main(String[] args) {
 
-        String word = "cbbd";
+        String word = "babad";
         System.out.println(longestPalindrome(word));
 
     }
 
-    static int maxLen = 0;
-    static int lo = 0;
+    static int maxLength = 0;
+    static int index = 0;
 
     public static String longestPalindrome(String word) {
         char[] input = word.toCharArray();
@@ -31,7 +31,7 @@ public class _3_LongestPalindromicSubstring {
             expandPalindrome(input, i, i);
             expandPalindrome(input, i, i + 1);
         }
-        return word.substring(lo, lo + maxLen);
+        return word.substring(index, index + maxLength);
     }
 
     public static void expandPalindrome(char[] word, int j, int k) {
@@ -39,9 +39,9 @@ public class _3_LongestPalindromicSubstring {
             j--;
             k++;
         }
-        if (maxLen < k - j - 1) {
-            maxLen = k - j - 1;
-            lo = j + 1;
+        if (maxLength < k - j - 1) {
+            maxLength = k - j - 1;
+            index = j + 1;
         }
     }
 }
