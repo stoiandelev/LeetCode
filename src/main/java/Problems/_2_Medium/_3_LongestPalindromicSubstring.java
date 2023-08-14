@@ -34,14 +34,16 @@ public class _3_LongestPalindromicSubstring {
         return word.substring(index, index + maxLength);
     }
 
-    public static void expandPalindrome(char[] word, int j, int k) {
-        while (j >= 0 && k < word.length && word[j] == word[k]) {
-            j--;
-            k++;
+    public static void expandPalindrome(char[] word, int left, int right) {
+        while (left >= 0 && right < word.length && word[left] == word[right]) {
+            left--;
+            right++;
         }
-        if (maxLength < k - j - 1) {
-            maxLength = k - j - 1;
-            index = j + 1;
+        if (maxLength < right - left - 1) {
+            maxLength = right - left - 1;
+            index = left + 1;
         }
     }
 }
+
+//public static void expandPalindrome(char[] word, int j, int k) {

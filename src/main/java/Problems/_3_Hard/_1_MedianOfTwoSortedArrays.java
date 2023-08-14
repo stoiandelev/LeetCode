@@ -1,10 +1,7 @@
 package Problems._3_Hard;
 
-import java.util.ArrayList;
+
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Given two sorted arrays nums1 and nums2 of size m and n respectively,
