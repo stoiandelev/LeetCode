@@ -40,13 +40,12 @@ public class _2_RegularExpressionMatching {
         if (j == pattern.length()) {
             answer = i == text.length();
         } else {
-            boolean first_match = (i < text.length() &&
-                    (pattern.charAt(j) == text.charAt(i) ||
-                            pattern.charAt(j) == '.'));
+            boolean first_match = (i < text.length() && (pattern.charAt(j) == text.charAt(i)
+                    || pattern.charAt(j) == '.'));
 
             if (j + 1 < pattern.length() && pattern.charAt(j + 1) == '*') {
-                answer = (dp(i, j + 2, text, pattern) ||
-                        first_match && dp(i + 1, j, text, pattern));
+                answer = (dp(i, j + 2, text, pattern)
+                        || first_match && dp(i + 1, j, text, pattern));
             } else {
                 answer = first_match && dp(i + 1, j + 1, text, pattern);
             }
