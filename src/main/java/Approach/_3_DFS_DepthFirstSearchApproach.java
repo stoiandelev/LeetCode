@@ -3,7 +3,7 @@ package Approach;
 import java.util.*;
 
 /**
- * traverses a graph by visiting every vertex one and only once.
+ * DFS -> traverses a graph by visiting every vertex one and only once.
  * all vertices are marked by not visited, and when we visited - visited.
  * explorer the all neighbours and all the way down.
  * then backtrack to the closest parent with unvisited neighbours
