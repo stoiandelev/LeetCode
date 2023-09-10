@@ -12,13 +12,17 @@ import java.util.List;
  * all the odd elements are at the end of the array.
  */
 
-public class SortArrayEvenOdd   {
+public class SortArrayEvenOdd {
     public static void main(String[] args) {
 
         List<Integer> list = new ArrayList<>();
-        list.add(17);
-        list.add(6);
+        list.add(2);
         list.add(4);
+        list.add(6);
+        list.add(7);
+        list.add(8);
+        list.add(9);
+        list.add(11);
 
 //        Comparator<Integer> customComparator = (a, b) -> {
 //            if (a % 2 == 0 && b % 2 != 0) {
@@ -39,30 +43,59 @@ public class SortArrayEvenOdd   {
 //            System.out.print(num + " ");
 //        }
 
-        List<Integer> evenList = new ArrayList<>();
-        List<Integer> oddList = new ArrayList<>();
+//        List<Integer> evenList = new ArrayList<>();
+//        List<Integer> oddList = new ArrayList<>();
+//
+//        // Separate even and odd numbers
+//        for (int num : list) {
+//            if (num % 2 == 0) {
+//                evenList.add(num);
+//            } else {
+//                oddList.add(num);
+//            }
+//        }
+//
+//        // Combine the lists (even numbers first, followed by odd numbers)
+//        evenList.addAll(oddList);
+//
+//        // Update the original list with the custom-sorted elements
+//        list.clear();
+//        list.addAll(evenList);
+//
+//        // Print the sorted list
+//        for (int num : list) {
+//            System.out.print(num + " ");
+//        }
 
-        // Separate even and odd numbers
-        for (int num : list) {
-            if (num % 2 == 0) {
-                evenList.add(num);
-            } else {
-                oddList.add(num);
+        sortEvenOdd(list);
+
+        System.out.println(list);
+
+
+    }
+
+    public static void sortEvenOdd(List<Integer> list) {
+        int left = 0;
+        int right = list.size() - 1;
+
+        while (left < right) {
+
+            while (list.get(left) % 2 == 0 && left < right) {
+                left++;
+            }
+
+            while (list.get(right) % 2 != 0 && left < right) {
+                right--;
+            }
+
+            if (left < right) {
+                // Swap the even and odd elements
+                int temp = list.get(left);
+                list.set(left, list.get(right));
+                list.set(right, temp);
+                left++;
+                right--;
             }
         }
-
-        // Combine the lists (even numbers first, followed by odd numbers)
-        evenList.addAll(oddList);
-
-        // Update the original list with the custom-sorted elements
-        list.clear();
-        list.addAll(evenList);
-
-        // Print the sorted list
-        for (int num : list) {
-            System.out.print(num + " ");
-        }
-
-
     }
 }
