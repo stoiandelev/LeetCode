@@ -8,7 +8,7 @@ import java.util.stream.Stream;
  * find the shortest path between two vertices of a given graph.
  */
 
-public class _7_Graph {
+public class _7_Dijkstra_Algorithm_Graph {
     public static void main(String[] args) {
 
         NodeGraph nodeA = new NodeGraph("A");
