@@ -33,7 +33,7 @@ public class _5_BinarySearchApproach {
         int height = array.length - 1;
 
         while (low <= height) {
-            int middleIndex = low + (height - low) / 2;
+            int middleIndex = low + (height - low) / 2;  //formula
             int value = array[middleIndex];
 
             System.out.println("middle: " + value);
