@@ -4,6 +4,8 @@ package Problems._1_Easy;
  * Given a binary tree, determine if it is height-balanced.
  * A height-balanced binary tree is a binary tree in which
  * the depth of the two subtrees of every node never differs by more than one.
+ * A binary tree is balanced binary tree if the different in height of left
+ * and right subtrees for every node no more than 1;
  */
 
 public class _30_BalancedBinaryTree {
