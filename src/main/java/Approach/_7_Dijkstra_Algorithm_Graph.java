@@ -89,7 +89,7 @@ public class _7_Dijkstra_Algorithm_Graph {
 class NodeGraph implements Comparable<NodeGraph> {
 
     private String name;     //name of node / A, B, C etc. /
-    private Integer distance = Integer.MAX_VALUE;
+    private Integer distance = Integer.MAX_VALUE;   // because we search min distance
     private List<NodeGraph> shortestPath = new ArrayList<>();
     private Map<NodeGraph, Integer> adjacentNode = new HashMap<>();
 
