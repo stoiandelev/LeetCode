@@ -26,7 +26,7 @@ public class _11_LetterCombinationsOfAPhoneNumber {
 
 
     public static List<String> letterCombinations(String digits) {
-        if (digits == null || digits.isEmpty()) {
+        if (digits == null || digits.isEmpty() || digits.trim().isEmpty()) {
             return resultList;
         }
 
@@ -58,7 +58,9 @@ public class _11_LetterCombinationsOfAPhoneNumber {
             for (int i = 0; i < letterOption.length(); i++) {
                 char letter = letterOption.charAt(i);
                 currentCombination.append(letter);
+
                 generateCombinations(digits, currentIndex + 1, currentCombination);
+
                 currentCombination.deleteCharAt(currentCombination.length() - 1);
             }
         }
