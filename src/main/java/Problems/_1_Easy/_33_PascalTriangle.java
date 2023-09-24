@@ -18,14 +18,14 @@ public class _33_PascalTriangle {
     }
 
     public static List<List<Integer>> generatePascalTriangle(int numRows) {
-        List<List<Integer>> triangle = new ArrayList<>();
-        if (numRows == 0) return triangle;
+        List<List<Integer>> pascalTriangle = new ArrayList<>();
+        if (numRows == 0) return pascalTriangle;
 
-        triangle.add(new ArrayList<>());
-        triangle.get(0).add(1);
+        pascalTriangle.add(new ArrayList<>());
+        pascalTriangle.get(0).add(1);
 
         for (int i = 1; i < numRows; i++) {
-            List<Integer> previousRow = triangle.get(i - 1);
+            List<Integer> previousRow = pascalTriangle.get(i - 1);
             List<Integer> newRow = new ArrayList<>();
             newRow.add(1);
 
@@ -35,10 +35,10 @@ public class _33_PascalTriangle {
             }
 
             newRow.add(1);
-            triangle.add(newRow);
+            pascalTriangle.add(newRow);
         }
 
-        return triangle;
+        return pascalTriangle;
 
     }
 }
