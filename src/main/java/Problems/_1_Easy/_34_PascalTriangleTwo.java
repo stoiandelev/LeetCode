@@ -1,7 +1,6 @@
 package Problems._1_Easy;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -10,7 +9,7 @@ import java.util.List;
  * In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:
  */
 
-public class PascalTriangleTwo {
+public class _34_PascalTriangleTwo {
     public static void main(String[] args) {
 
         int rowIndex = 3;
