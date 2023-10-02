@@ -5,8 +5,8 @@ import java.util.*;
 /**
  * DFS -> traverses a graph by visiting every vertex one and only once.
  * all vertices are marked by not visited, and when we visited - visited.
- * explorer the all neighbours and all the way down.
- * then backtrack to the closest parent with unvisited neighbours
+ * explorer the all neighbors and all the way down.
+ * then backtrack to the closest parent with unvisited neighbors
  * use LIFO - STACK.
  */
 public class _3_DFS_DepthFirstSearchApproach {

@@ -3,7 +3,15 @@ package Approach;
 /**
  * Minimum size Subarray Sum from how many minimum value can do sum grater or
  * equal given on target.
- * minimum length;
+ * Minimum length;
+ * Sliding Window Technique is mostly used for finding sub-arrays inside larger arrays.
+ * You can apply the Sliding Window to a majority of
+ * minimum/maximum/common subarray/substring type of questions.
+ * Note that some subarray-related questions have very specific and optimized solutions,
+ * like that of Kadane's Algorithm.
+ * The condition to use the sliding window technique is that the problem
+ * asks to find the maximum (or minimum) value for a function that
+ * calculates the answer repeatedly for a set of ranges from the array.
  */
 
 public class _2_SlidingWindowApproach {
