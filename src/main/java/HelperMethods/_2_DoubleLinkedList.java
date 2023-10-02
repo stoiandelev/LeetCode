@@ -13,10 +13,10 @@ public class _2_DoubleLinkedList {
         myList.append(4);
         myList.append(5);
 
-        System.out.println("Original List:");
+        System.out.println("Original _1_List:");
         myList.display();
 
-        System.out.println("Reversed List:");
+        System.out.println("Reversed _1_List:");
         reverse(myList);
         myList.display();
 

@@ -3,7 +3,12 @@ package Approach;
 import java.util.Arrays;
 
 /**
+ * Whenever an array question deals with finding two numbers in an array
+ * that satisfy a certain condition, either directly or indirectly,
+ * two-pointer should be the first strategy that comes to mind.
  * Two sums find two numbers how give a target, return the position of the numbers.
+ * Two pointers is really an easy and effective technique that is
+ * typically used for searching pairs in a sorted array
  */
 
 public class _1_2PointerApproach {
