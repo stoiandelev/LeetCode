@@ -1,10 +1,8 @@
 package Approach;
 
-import java.util.Arrays;
-
 //O(log n)
 
-public class _5_BinarySearchApproach {
+public class _5_BinarySearchAlgo {
     public static void main(String[] args) {
 
         int[] array = new int[100];

@@ -5,8 +5,8 @@ import java.util.*;
 /**
  * BFS -> traverses visiting every vertex once and once only.
  * to begin, the traversal must provide a starting vertex to the algorithm.
- * explore all of its neighbours before moving on to the vertices at the next depth level.
- * USE FIFI -> QUEUE -> when is empty -> graph is traversed.
+ * explore all of its neighbors before moving on to the vertices at the next depth level.
+ * USE FIFO -> QUEUE -> when is empty -> graph is traversed.
  */
 
 public class _4_BFS_BreadthFirstSearchApproach {
