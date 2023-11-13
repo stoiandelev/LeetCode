@@ -11,7 +11,7 @@ import java.util.Arrays;
  * You can return the answer in any order.
  */
 
-public class _9_TwoSum {
+public class _9_TwoSum_1 {
     public static void main(String[] args) {
 
         int[] array = {3, 2, 3};

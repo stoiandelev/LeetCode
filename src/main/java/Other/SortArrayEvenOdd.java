@@ -43,8 +43,8 @@ public class SortArrayEvenOdd {
 //            System.out.print(num + " ");
 //        }
 
-//        List<Integer> evenList = new ArrayList<>();
-//        List<Integer> oddList = new ArrayList<>();
+//        _1_List<Integer> evenList = new ArrayList<>();
+//        _1_List<Integer> oddList = new ArrayList<>();
 //
 //        // Separate even and odd numbers
 //        for (int num : list) {
